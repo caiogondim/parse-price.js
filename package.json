@@ -1,0 +1,35 @@
+{
+  "name": "parse-price",
+  "version": "1.0.0",
+  "description": "returns a `Number` from a localized price string",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/**/*.js | faucet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiogondim/parse-price.js.git"
+  },
+  "keywords": [
+    "parse",
+    "number",
+    "localization",
+    "price",
+    "i10n",
+    "i18n",
+    "internationalization"
+  ],
+  "author": "Caio Gondim",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caiogondim/parse-price.js/issues"
+  },
+  "homepage": "https://github.com/caiogondim/parse-price.js#readme",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.6.0"
+  }
+}
