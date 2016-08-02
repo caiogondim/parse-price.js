@@ -1,7 +1,11 @@
 const test = require('tape')
 const parsePrice = require('../src/')
+const prices = require('./prices-examples')
 
-test('lorem', t => {
-  t.equal(3, parsePrice(1, 2))
-  t.end()
+prices.forEach(price => {
+  test(price.name, t => {
+    const parsedPrice = parsePrice(price.input)
+    t.equal(parsedPrice, price.expectedOutput)
+    t.end()
+  })
 })
