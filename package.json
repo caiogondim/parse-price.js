@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tape test/**/*.js | faucet"
+    "test": "tap test/index.js --cov"
   },
   "repository": {
     "type": "git",
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/caiogondim/parse-price.js#readme",
   "devDependencies": {
-    "faucet": "0.0.1",
-    "tape": "^4.6.0"
+    "covert": "^1.1.0",
+    "tap": "^6.3.0"
   }
 }

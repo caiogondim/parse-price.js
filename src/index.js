@@ -28,7 +28,6 @@ function filterNumbersDotsAndCommas(str) {
 // -----------------------------------------------------------------------------
 
 function parsePrice(str) {
-  console.log('str:', str)
   var decimalPart = '00'
 
   if (hasDecimalPart(str)) {
