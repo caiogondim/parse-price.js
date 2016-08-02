@@ -1,6 +1,6 @@
 'use strict'
 
-function hasDecimalPart(str) {
+function hasDecimalPart (str) {
   str = filterNumbersDotsAndCommas(str)
 
   return (
@@ -9,17 +9,17 @@ function hasDecimalPart(str) {
   )
 }
 
-function getDecimalSymbol(str) {
+function getDecimalSymbol (str) {
   str = filterNumbersDotsAndCommas(str)
   return str[str.length - 3]
 }
 
-function filterNumbers(str) {
+function filterNumbers (str) {
   var filteredStr = str.replace(/[^\d]/g, '')
   return filteredStr
 }
 
-function filterNumbersDotsAndCommas(str) {
+function filterNumbersDotsAndCommas (str) {
   return str.replace(/[^\d.,]/g, '')
 }
 
@@ -27,7 +27,7 @@ function filterNumbersDotsAndCommas(str) {
 // API
 // -----------------------------------------------------------------------------
 
-function parsePrice(str) {
+function parsePrice (str) {
   var decimalPart = '00'
 
   if (hasDecimalPart(str)) {
@@ -36,9 +36,9 @@ function parsePrice(str) {
     decimalPart = str.split(decimalSymbol)[1]
     decimalPart = filterNumbers(decimalPart)
   }
-  
+
   var integerPart = filterNumbers(str.split(decimalSymbol)[0])
-  
+
   return Number(integerPart + '.' + decimalPart)
 }
 

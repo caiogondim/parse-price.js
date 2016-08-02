@@ -7,7 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "tap test/index.js --cov"
+    "test": "tap test/index.js --cov",
+    "test:lint": "standard 'src/**/*.js' 'test/**/*.js'",
+    "test:lint:fix": "standard --fix 'src/**/*.js' 'test/**/*.js'",
+    "test:all": "npm run test:lint && npm run test"
   },
   "repository": {
     "type": "git",
@@ -30,6 +33,7 @@
   "homepage": "https://github.com/caiogondim/parse-price.js#readme",
   "devDependencies": {
     "covert": "^1.1.0",
+    "standard": "^7.1.2",
     "tap": "^6.3.0"
   }
 }
