@@ -1,6 +1,7 @@
 <img src="http://rawgit.com/caiogondim/parse-price.js/master/logo/banner.svg">
 
 # parse-price.js
+<img src="http://travis-ci.org/caiogondim/parse-price.js.svg?branch=master" alt="Travis CI">
 
 Returns a `Number` from a localized price string.
 
