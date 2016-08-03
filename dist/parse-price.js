@@ -1,7 +1,7 @@
 /**
  * parse-price - returns a `Number` from a localized price string
  *
- * @version 1.0.0
+ * @version 1.1.1
  * @link https://github.com/caiogondim/parse-price.js#readme
  * @author Caio Gondim
  * @license MIT

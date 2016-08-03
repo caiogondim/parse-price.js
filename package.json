@@ -14,7 +14,9 @@
     "posttest": "tap --coverage-report=lcov | codecov",
     "build": "webpack && ./tasks/write-banner",
     "build:min": "webpack && uglifyjs dist/parse-price.js -c -m -o dist/parse-price.min.js && ./tasks/write-banner",
-    "build:all": "npm run build && npm run build:min"
+    "build:all": "npm run build && npm run build:min",
+    "preversion": "npm run test:all",
+    "version": "npm run build:all && git add dist/"
   },
   "repository": {
     "type": "git",
