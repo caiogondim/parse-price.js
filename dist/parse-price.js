@@ -1,3 +1,12 @@
+
+/**
+ * parse-price - returns a `Number` from a localized price string
+ *
+ * @version 1.0.0
+ * @link https://github.com/caiogondim/parse-price.js#readme
+ * @author Caio Gondim
+ * @license MIT
+ */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();

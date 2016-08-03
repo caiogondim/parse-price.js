@@ -11,8 +11,8 @@
     "test:lint": "standard 'src/**/*.js' 'test/**/*.js'",
     "test:lint:fix": "standard --fix 'src/**/*.js' 'test/**/*.js'",
     "test:all": "npm run test:lint && npm run test",
-    "build": "webpack",
-    "build:min": "webpack && uglifyjs dist/parse-price.js -c -m -o dist/parse-price.min.js",
+    "build": "webpack && ./tasks/write-banner",
+    "build:min": "webpack && uglifyjs dist/parse-price.js -c -m -o dist/parse-price.min.js && ./tasks/write-banner",
     "build:all": "npm run build && npm run build:min"
   },
   "repository": {
