@@ -1,4 +1,3 @@
-
 /**
  * parse-price - returns a `Number` from a localized price string
  *

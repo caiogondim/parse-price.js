@@ -3,8 +3,7 @@
 const fs = require('fs')
 const packageJson = require('../package.json')
 
-const banner = `
-/**
+const banner = `/**
  * ${packageJson.name} - ${packageJson.description}
  *
  * @version ${packageJson.version}
