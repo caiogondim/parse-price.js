@@ -10,7 +10,8 @@
     "test": "tap test/index.js --cov",
     "test:lint": "standard 'src/**/*.js' 'test/**/*.js'",
     "test:lint:fix": "standard --fix 'src/**/*.js' 'test/**/*.js'",
-    "test:all": "npm run test:lint && npm run test"
+    "test:all": "npm run test:lint && npm run test",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
   "devDependencies": {
     "covert": "^1.1.0",
     "standard": "^7.1.2",
-    "tap": "^6.3.0"
+    "tap": "^6.3.0",
+    "webpack": "^1.13.1"
   }
 }
