@@ -15,6 +15,7 @@ parsePrice('£1,234.56') // => 1234.56
 parsePrice('R$1.234,56') // => 1234.56
 parsePrice('1 234,56 руб') // => 1234.56
 parsePrice('1,234.56 ₪') // => 1234.56
+```
 
 ## Installation
 
