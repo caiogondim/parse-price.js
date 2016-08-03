@@ -40,7 +40,7 @@ reference it on your browser (drop it) and use it.
 ```html
 <script src="dist/parse-price.min.js"></script>
 <script>
-  window.parsePrice('€1.1234,56')
+  var price = window.parsePrice('€1.1234,56')
 </script>
 ```
 
