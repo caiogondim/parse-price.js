@@ -1,6 +1,6 @@
 <img src="http://rawgit.com/caiogondim/parse-price.js/master/logo/banner.svg">
 
-# parse-price
+# parse-price.js
 
 ## Usage
 
