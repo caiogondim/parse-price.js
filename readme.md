@@ -1,7 +1,7 @@
 <img src="http://rawgit.com/caiogondim/parse-price.js/master/logo/banner.svg">
 
 # parse-price.js
-<img src="http://travis-ci.org/caiogondim/parse-price.js.svg?branch=master" alt="Travis CI"> <img src="https://david-dm.org/caiogondim/parse-price.js/status.svg" alt="dependencies status"> <img src="https://david-dm.org/caiogondim/parse-price.js/dev-status.svg" alt="dev dependencies status">
+<img src="http://travis-ci.org/caiogondim/parse-price.js.svg?branch=master" alt="Travis CI"> [![codecov](https://codecov.io/gh/caiogondim/parse-price.js/branch/master/graph/badge.svg)](https://codecov.io/gh/caiogondim/parse-price.js) <img src="https://david-dm.org/caiogondim/parse-price.js/status.svg" alt="dependencies status"> <img src="https://david-dm.org/caiogondim/parse-price.js/dev-status.svg" alt="dev dependencies status">
 
 Returns a `Number` from a localized price string.
 
