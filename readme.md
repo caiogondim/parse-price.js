@@ -2,6 +2,8 @@
 
 # parse-price.js
 
+Returns a `Number` from a localized price string.
+
 ## Usage
 
 Receives a string (price) as input and returns a `Number` (or `NaN`) as output.
