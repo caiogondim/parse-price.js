@@ -1,6 +1,6 @@
 {
   "name": "parse-price",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "returns a `Number` from a localized price string",
   "main": "src/index.js",
   "directories": {
