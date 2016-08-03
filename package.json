@@ -11,7 +11,9 @@
     "test:lint": "standard 'src/**/*.js' 'test/**/*.js'",
     "test:lint:fix": "standard --fix 'src/**/*.js' 'test/**/*.js'",
     "test:all": "npm run test:lint && npm run test",
-    "build": "webpack"
+    "build": "webpack",
+    "build:min": "webpack && uglifyjs dist/parse-price.js -c -m -o dist/parse-price.min.js",
+    "build:all": "npm run build && npm run build:min"
   },
   "repository": {
     "type": "git",
@@ -36,6 +38,7 @@
     "covert": "^1.1.0",
     "standard": "^7.1.2",
     "tap": "^6.3.0",
+    "uglify-js": "^2.7.0",
     "webpack": "^1.13.1"
   }
 }
