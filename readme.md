@@ -1,7 +1,7 @@
 <img src="http://rawgit.com/caiogondim/parse-price.js/master/logo/banner.svg">
 
 # parse-price.js
-[![npm version](https://badge.fury.io/js/parse-price.svg)](https://badge.fury.io/js/parse-price) <img src="http://travis-ci.org/caiogondim/parse-price.js.svg?branch=master" alt="Travis CI"> [![codecov](https://codecov.io/gh/caiogondim/parse-price.js/branch/master/graph/badge.svg)](https://codecov.io/gh/caiogondim/parse-price.js) <img src="https://david-dm.org/caiogondim/parse-price.js/status.svg" alt="dependencies status"> <img src="http://img.badgesize.io/caiogondim/parse-price.js/master/dist/parse-price.min.js?compression=gzip" alt="lib size">
+<img src="http://travis-ci.org/caiogondim/parse-price.js.svg?branch=master" alt="Travis CI"> [![codecov](https://codecov.io/gh/caiogondim/parse-price.js/branch/master/graph/badge.svg)](https://codecov.io/gh/caiogondim/parse-price.js) <img src="https://david-dm.org/caiogondim/parse-price.js/status.svg" alt="dependencies status"> <img src="http://img.badgesize.io/caiogondim/parse-price.js/master/dist/parse-price.min.js?compression=gzip" alt="lib size">
 
 Returns a `Number` from a localized price string.
 
