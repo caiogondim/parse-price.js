@@ -1,5 +1,7 @@
-'use strict'
-
+/**
+ * @param {String} str
+ * @return {Boolean}
+ */
 function hasDecimalPart (str) {
   str = filterNumbersDotsAndCommas(str)
 
@@ -9,24 +11,40 @@ function hasDecimalPart (str) {
   )
 }
 
+/**
+ * @param {String} str
+ * @return {String}
+ */
 function getDecimalSymbol (str) {
   str = filterNumbersDotsAndCommas(str)
   return str[str.length - 3]
 }
 
+/**
+ * @param {String} str
+ * @return {String}
+ */
 function filterNumbers (str) {
   var filteredStr = str.replace(/[^\d]/g, '')
   return filteredStr
 }
 
+/**
+ * @param {String} str
+ * @return {String}
+ */
 function filterNumbersDotsAndCommas (str) {
   return str.replace(/[^\d.,]/g, '')
 }
 
-// -----------------------------------------------------------------------------
+//
 // API
-// -----------------------------------------------------------------------------
+//
 
+/**
+ * @param {String} str
+ * @return {Number}
+ */
 function parsePrice (str) {
   var decimalPart = '00'
 

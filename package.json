@@ -8,9 +8,10 @@
   },
   "scripts": {
     "test": "tap test/index.js --cov",
+    "test:types": "tsc --allowJs --checkJs --noEmit src/*.js",
     "test:lint": "standard 'src/**/*.js' 'test/**/*.js'",
     "test:lint:fix": "standard --fix 'src/**/*.js' 'test/**/*.js'",
-    "test:all": "npm run test:lint && npm run test",
+    "test:all": "npm run test:lint && npm run test && npm run test:types",
     "posttest": "tap --coverage-report=lcov | codecov",
     "build": "webpack && ./tasks/write-banner",
     "build:min": "webpack && uglifyjs dist/parse-price.js -c -m -o dist/parse-price.min.js && ./tasks/write-banner",
@@ -38,10 +39,12 @@
   },
   "homepage": "https://github.com/caiogondim/parse-price.js#readme",
   "devDependencies": {
+    "@types/node": "8.0.34",
     "codecov": "^1.0.1",
     "covert": "^1.1.0",
     "standard": "^7.1.2",
     "tap": "^6.3.0",
+    "typescript": "2.5.3",
     "uglify-js": "^2.7.0",
     "webpack": "^1.13.1"
   }
