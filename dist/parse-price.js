@@ -1,7 +1,7 @@
 /**
  * parse-price - returns a Number from a localized price string
  *
- * @version 1.1.3
+ * @version 1.1.4
  * @link https://github.com/caiogondim/parse-price.js#readme
  * @author Caio Gondim
  * @license MIT
@@ -60,10 +60,12 @@ return /******/ (function(modules) { // webpackBootstrap
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports) {
+/***/ (function(module, exports) {
 
-	'use strict'
-
+	/**
+	 * @param {String} str
+	 * @return {Boolean}
+	 */
 	function hasDecimalPart (str) {
 	  str = filterNumbersDotsAndCommas(str)
 
@@ -73,24 +75,40 @@ return /******/ (function(modules) { // webpackBootstrap
 	  )
 	}
 
+	/**
+	 * @param {String} str
+	 * @return {String}
+	 */
 	function getDecimalSymbol (str) {
 	  str = filterNumbersDotsAndCommas(str)
 	  return str[str.length - 3]
 	}
 
+	/**
+	 * @param {String} str
+	 * @return {String}
+	 */
 	function filterNumbers (str) {
 	  var filteredStr = str.replace(/[^\d]/g, '')
 	  return filteredStr
 	}
 
+	/**
+	 * @param {String} str
+	 * @return {String}
+	 */
 	function filterNumbersDotsAndCommas (str) {
 	  return str.replace(/[^\d.,]/g, '')
 	}
 
-	// -----------------------------------------------------------------------------
+	//
 	// API
-	// -----------------------------------------------------------------------------
+	//
 
+	/**
+	 * @param {String} str
+	 * @return {Number}
+	 */
 	function parsePrice (str) {
 	  var decimalPart = '00'
 
@@ -109,7 +127,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	module.exports = parsePrice
 
 
-/***/ }
+/***/ })
 /******/ ])
 });
 ;
