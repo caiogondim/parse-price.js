@@ -35,11 +35,6 @@ var prices = [
     input: '1,590 ₪',
     expectedOutput: 1590,
     name: 'ILS without cents'
-  },
-  {
-    input: '1,590.89 ₪',
-    expectedOutput: 1590.89,
-    name: 'ILS with cents'
   }
 ]
 
@@ -113,6 +108,42 @@ prices = prices.concat([
     input: '1.234,56 €',
     expectedOutput: 1234.56,
     name: 'EUR Spain'
+  }
+])
+
+// -------------------------------------------------------------------
+// Various input formats
+// -------------------------------------------------------------------
+prices = prices.concat([
+  {
+    input: 123.45,
+    expectedOutput: 123.45,
+    name: 'input cast to string'
+  },
+  {
+    input: '12.3',
+    expectedOutput: 12.3,
+    name: 'single digit at end with "."'
+  },
+  {
+    input: '12,3',
+    expectedOutput: 12.3,
+    name: 'single digit at end with ","'
+  },
+  {
+    input: '€12,3',
+    expectedOutput: 12.3,
+    name: 'single digit at end with "€"'
+  },
+  {
+    input: '12,3 €',
+    expectedOutput: 12.3,
+    name: 'single digit at end with "€" at end'
+  },
+  {
+    input: '$0.0005',
+    expectedOutput: 0.0005,
+    name: 'Higher precision floatig point'
   }
 ])
 
