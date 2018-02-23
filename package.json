@@ -14,7 +14,7 @@
     "build": "webpack && ./tasks/write-banner",
     "build:min": "webpack && uglifyjs dist/parse-price.js -c -m -o dist/parse-price.min.js && ./tasks/write-banner",
     "build:all": "npm run build && npm run build:min",
-    "preversion": "npm run test:all",
+    "preversion": "npm run test",
     "version": "npm run build:all && git add dist/"
   },
   "repository": {
