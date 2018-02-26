@@ -30,14 +30,9 @@ To use the library, install it through [npm](https://npmjs.com)
 npm install --save parse-price
 ```
 
-To port it to Browser or any other (non CJS) environment, use your favorite CJS
-bundler. No favorite yet? Try: [Browserify](http://browserify.org/),
-[Webmake](https://github.com/medikoo/modules-webmake) or
-[Webpack](http://webpack.github.io/)
-
 ### Drop-in
 
-If using a bunlder is not your thing, there are two files with UMD (Universal
+If using a bundler is not your thing, there are two files with UMD (Universal
 Module Definition) under `dist/` folder, one of them already minified. Just
 reference it on your browser (drop it) and use it.
 
