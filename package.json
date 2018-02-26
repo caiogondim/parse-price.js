@@ -1,22 +1,20 @@
 {
   "name": "parse-price",
-  "version": "1.1.3",
+  "version": "1.1.6",
   "description": "returns a Number from a localized price string",
   "main": "src/index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "tap test/index.js --cov",
     "test:types": "tsc --allowJs --checkJs --noEmit src/*.js",
     "test:lint": "standard 'src/**/*.js' 'test/**/*.js'",
     "test:lint:fix": "standard --fix 'src/**/*.js' 'test/**/*.js'",
-    "test:all": "npm run test:lint && npm run test && npm run test:types",
-    "posttest": "tap --coverage-report=lcov | codecov",
+    "test": "tap test/index.js --cov && npm run test:lint && npm run test:types",
     "build": "webpack && ./tasks/write-banner",
     "build:min": "webpack && uglifyjs dist/parse-price.js -c -m -o dist/parse-price.min.js && ./tasks/write-banner",
     "build:all": "npm run build && npm run build:min",
-    "preversion": "npm run test:all",
+    "preversion": "npm run test",
     "version": "npm run build:all && git add dist/"
   },
   "repository": {
