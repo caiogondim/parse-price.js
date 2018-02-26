@@ -18,9 +18,9 @@ function getDecimalSymbol (str) {
   var strFiltered = filterNumbersDotsAndCommas(str)
   var endWithZero = strFiltered[strFiltered.length - 1] === '0'
 
-    // for each character starting from the end...
+  // For each character starting from the end...
   for (var i = strFiltered.length; i > 0; i--) {
-      // if the last character is a "0" and the decimal position > 3, no decimal
+    // If the last character is a "0" and the decimal position > 3, no decimal
     if (((strFiltered.length - i + 1) > 3) && endWithZero) {
       return
     }
