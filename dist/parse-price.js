@@ -1,7 +1,7 @@
 /**
  * parse-price - returns a Number from a localized price string
  *
- * @version 1.1.7
+ * @version 1.1.8
  * @link https://github.com/caiogondim/parse-price.js#readme
  * @author Caio Gondim
  * @license MIT
@@ -75,7 +75,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @return {String}
 	 */
 	function filterNumbersDotsAndCommas (str) {
-	  return str.replace(/[^\d.,]/g, '')
+	  return str
+	    .replace(/[^\d.,]/g, '')
+	    .replace(/[.,]$/, '')
 	}
 
 	function getDecimalSymbol (str) {
