@@ -145,6 +145,11 @@ prices = prices.concat([
     input: '$0.0005',
     expectedOutput: 0.0005,
     name: 'Higher precision floatig point'
+  },
+  {
+    input: '1&nbsp;490,00 руб.',
+    expectedOutput: 1490.00,
+    name: 'Abbreviated russian currency'
   }
 ])
 

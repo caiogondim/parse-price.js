@@ -11,7 +11,9 @@ function filterNumbers (str) {
  * @return {String}
  */
 function filterNumbersDotsAndCommas (str) {
-  return str.replace(/[^\d.,]/g, '')
+  return str
+    .replace(/[^\d.,]/g, '')
+    .replace(/[.,]$/, '')
 }
 
 function getDecimalSymbol (str) {
